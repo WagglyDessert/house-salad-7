@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root "welcome#index"
+  post "/search", to: "search#search"
+  get "/search", to: "search#index"
 end
